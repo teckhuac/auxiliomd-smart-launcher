@@ -132,7 +132,9 @@
     //   $('#risk').html(prediction);
     // });
 
-    window.location.href = "https://auxiliomd.pythonanywhere.com/risk_assessment_html?patientID=0&systolicbp=" + String(p.systolicbp)
+    console.log(p.systolicbp)
+
+    window.location.href = "https://auxiliomd.pythonanywhere.com/risk_assessment_html?patientID=0&systolicbp=" + p.systolicbp
   };
 
 })(window);
