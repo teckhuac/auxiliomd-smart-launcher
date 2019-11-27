@@ -127,10 +127,12 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
 
-    $.get("https://auxiliomd.pythonanywhere.com/risk_assessment?patientID=0", function(data, status){
-      prediction = data;
-      $('#risk').html(prediction);
-    });
+    // $.get("https://auxiliomd.pythonanywhere.com/risk_assessment?patientID=0", function(data, status){
+    //   prediction = data;
+    //   $('#risk').html(prediction);
+    // });
+
+    window.location.href = "https://auxiliomd.pythonanywhere.com/risk_assessment?patientID=0"
   };
 
 })(window);
